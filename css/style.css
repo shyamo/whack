@@ -1,0 +1,147 @@
+body {
+    cursor: url(../images/mallet.svg), auto;
+}
+
+.container { 
+    margin: 100px auto;
+    margin-top: 60px;
+    background-color: #FFF;
+}
+.game-over {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    background: #C35656;
+    color:#FFF;
+    position: absolute;
+    z-index: 9999;
+    font-size: 3em;
+    cursor: default;
+}
+
+.game-over h1 {
+    font-size:3em;
+}
+.hole {
+    width:80%;
+    height:100px;
+    border:solid 1px #565656;
+    border-radius:50%;
+    margin: 0px auto;
+    background: -webkit-radial-gradient(#4a4a4a, #000, #000); 
+    background: -o-radial-gradient(#4a4a4a, #000, #000); 
+    background: -moz-radial-gradient(#4a4a4a, #000, #000);
+    background: #000;
+}
+
+.hole-con {
+    padding: 20px 0px;
+}
+
+.reset.play-again {
+    background-color:#3E73B1;
+    margin-top:30px;
+    border-radius:12px;
+    font-size: 1em;
+}
+
+.lives {
+    float:left;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top:20px;
+}
+.heart {
+    margin: 0px -20px;
+    width: 100px;
+    height: 100px;
+    background: url(../images/lives.svg) no-repeat;
+    background-size: 50%;
+    float:left;
+}
+.score-center {
+    width: 100%;
+    background-color:#f1f1f1;
+    padding:20px;
+}
+.score-center p 
+{
+    font-size: 1.4em;
+}
+
+.score-center,
+.score-buttons {
+    cursor:default;
+}
+
+.score-center-over {
+    margin-top: 30px;
+    width: 360px;
+    margin: 40px auto;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 20px;
+    color: #000;
+}
+
+.gremlin {
+    position: absolute;
+    bottom: 50%;
+    margin: 0px 10%;
+    width: 150px;
+    height: 0px;
+    transition-duration: 0.2s;
+    border-radius: 50% 50% 0px 0px;
+    background-image: url(../images/gremlin.svg);
+    background-image: url(../images/gremlin.svg) , -webkit-linear-gradient(blue, #000) ; 
+    background-image: url(../images/gremlin.svg) , -o-linear-gradient(blue, #000); 
+    background-image: url(../images/gremlin.svg) , -moz-linear-gradient(blue, #000); 
+    background-image: url(../images/gremlin.svg) , linear-gradient(blue, #000); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-transform: translate3d;
+    -moz-transform:translate3d;
+    -o-transform:translate3d;
+    transform:translate3d;
+    
+}
+
+.gremlin-hit {
+    border-radius: 20% 20% 0px 0px;
+    opacity: 0.5;
+}
+
+.gremlin:active {
+/*    cursor: url(../images/mallet-hit.svg), auto;*/
+}
+.gremlin-show {
+    height: 180px;
+    transition-duration: 0.2s;
+    -webkit-transform: translate3d;
+    -moz-transform:translate3d;
+    -o-transform:translate3d;
+    transform:translate3d;
+}
+
+.score-buttons {
+    position: absolute;
+    margin-top: -70px;
+    right: 0;
+}
+.btn {
+    padding: 10px 20px;
+    margin:0px 20px;
+    font-size: 1.6em;
+    color:#FFF;
+}
+.reset {
+    background-color: #BA3CAA;
+}
+.play {
+    background-color: #3CBA4C;
+}
+

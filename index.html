@@ -1,0 +1,48 @@
+<!-- Wack-a-mole -->
+<!-- Copyright 2016 Shyam B-->
+<html>
+    <head>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <script src="js/main.js"></script>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    
+    <body>
+       <div class="score-center">
+           <p>Hits: <span class="hits">0</span></p>
+           <p>Misses: <span class="misses">0</span></p>
+           <p>Level: <span class="level">1</span></p>
+           
+           <div class="lives">
+               <div class="heart life1"></div>
+               <div class="heart life2"></div>
+               <div class="heart life3"></div>
+           </div>
+           
+       </div>
+       
+       <div class="score-buttons">
+               <button class="btn reset pull-right">Reset</button>
+               <button class="btn play pull-right">Play</button>
+       </div>
+           
+           
+    <div class="game-over" style="display:none;">
+        <h1>Game Over</h1>
+        <div class="score-center-over">
+            <p>Hits: <span class="hits">0</span></p>
+           <p>Misses: <span>3</span></p>
+           <p>Level: <span class="level">1</span></p>
+        </div>
+        <button class="btn reset play-again">Reset</button>
+    </div>
+       
+       
+        <div class="container">
+            
+        </div>
+
+    
+     </body>
+</html>
